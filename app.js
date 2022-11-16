@@ -6,8 +6,8 @@ const app=express();
 
 const Authorization=require("./middlewares/check-auth");
 
-const sensorDataRoutes = require('./routes/sensordataroutes');
-const expDataRoutes = require("./routes/experimentdataroutes");
+const sensorDataRoutes = require('./routes/sensordataRoutes');
+const expDataRoutes = require("./routes/experimentdataRoutes");
 const userRoutes = require("./routes/usersRoutes");
 
 app.use(cors());
