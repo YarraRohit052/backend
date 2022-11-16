@@ -4,7 +4,7 @@ const router=express.Router();
 
 const Authorization=require("../middlewares/check-auth");
 
-const sensorDataController=require('../controllers/sensorDataController');
+const sensorDataController=require('../controllers/sensorDataController1');
 
 router.post("/sensordata",sensorDataController.sensordataHandler);
 

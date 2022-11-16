@@ -1,4 +1,4 @@
-const Experiment = require("../models/experiment");
+const Experiment = require("../models/experiments");
 
 const expdataHandler=async(req,res,next)=>{
     //console.log(req.body);
