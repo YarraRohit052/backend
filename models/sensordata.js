@@ -12,6 +12,10 @@ const sensordataSchema = new Schema(
             type:Schema.Types.Number,
             required:true
         },
+        armaturecurrent:{
+            type:Schema.Types.Number,
+            required:true
+        },
         speed:{
             type:Schema.Types.Number,
             required:true

@@ -13,6 +13,11 @@ const experimentSchema=new Schema(
             required:true
             
         },
+        armaturecurrent:{
+            type:Schema.Types.Number,
+            required:true
+            
+        },
         speed:{
             type:Schema.Types.Number,
             required:true

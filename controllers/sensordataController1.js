@@ -2,7 +2,7 @@ const SensorData = require("../models/sensordata");
 
 
 const sensordataHandler = async (req, res, next) => {
-    const { voltage, current, speed } = req.body;
+    const { voltage, current,armaturecurrent, speed } = req.body;
     let exists = false, sensordata;
     try {
         sensordata = await SensorData.find();
@@ -23,6 +23,7 @@ const sensordataHandler = async (req, res, next) => {
             {
                 voltage: voltage,
                 current: current,
+                armaturecurrent:armaturecurrent,
                 speed: speed
             }
         );
@@ -32,6 +33,7 @@ const sensordataHandler = async (req, res, next) => {
             const newSensorData = new SensorData({
                 voltage: voltage,
                 current: current,
+                armaturecurrent:armaturecurrent,
                 speed: speed
             });
             await newSensorData.save();
@@ -75,6 +77,7 @@ const getdataHandler=async(req,res,next)=>{
         message: "Get Data successfully!!",
         voltage:sensordata[0].voltage,
         current:sensordata[0].current,
+        armaturecurrent:sensordata[0].armaturecurrent,
         speed:sensordata[0].speed,
         timestamp:updatedAtnew
     });

@@ -21,6 +21,5 @@ router.post(
         usersController.loginHandler
     );
 
-    router.post("/login",)
 
     module.exports=router;

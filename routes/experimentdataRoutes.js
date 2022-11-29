@@ -8,4 +8,6 @@ router.post("/postdata",expdataController.expdataHandler);
 
 router.post("/getexpdata",expdataController.getexpdata);
 
+router.post("/deleterow",expdataController.deleterowHandler);
+
 module.exports=router;

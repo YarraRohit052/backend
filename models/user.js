@@ -15,7 +15,7 @@ const userSchema=new Schema({
     rollno:{
         type:String,
         required:true,
-        minlength:6,
+        minlength:10,
     },
 },
     {timestamps:true}
